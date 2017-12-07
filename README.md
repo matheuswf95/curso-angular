@@ -1,1 +1,1 @@
-Angular 2 QuickStart Source
+Angular 2
