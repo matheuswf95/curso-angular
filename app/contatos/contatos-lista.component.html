@@ -12,11 +12,11 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th>Matheus</th>
-                        <th>matheus@teste.com</th>
-                        <th>(31) 9 9139-1931</th>
-                        <th><button class="btn btn-danger">Deletar</button></th>
+                    <tr *ngFor="let c of contatos">
+                        <td>{{c.nome}}</td>
+                        <td>{{c.email}}</td>
+                        <td>{{c.telefone}}</td>
+                        <td><button class="btn btn-danger">Deletar</button></td>
                     </tr>
                 </tbody>
             </table>

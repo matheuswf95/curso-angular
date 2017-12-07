@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { CONTATOS } from './contatos-mock';
+import { Contato } from './contato.model';
+
 
 @Component({
     moduleId: module.id,
@@ -7,5 +9,7 @@ import { CONTATOS } from './contatos-mock';
     templateUrl: 'contatos-lista.component.html'
 })
 export class ContatosListaComponent{
+
+    contatos: Contato[] = CONTATOS;
 
 }

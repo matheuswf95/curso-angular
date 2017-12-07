@@ -1,14 +1,24 @@
-import { ContatosListaComponent } from './contatos-lista.component';
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
+import { ContatosListaComponent } from './contatos-lista.component';
+import { ContatoDetalheComponent } from './contato-detalhe.component';
+import { ContatoRoutingModule } from './contato-routing.module';
+
+
 @NgModule({
-  declarations: [
+    imports:[
+        CommonModule,
+        ContatoRoutingModule
+    ],
+    declarations: [
+      ContatoDetalheComponent,
       ContatosListaComponent
-  ],
-  exports: [
-      ContatosListaComponent
-  ]
+    ],
+    exports: [
+        ContatosListaComponent
+    ]
 })
 
 export class ContatosModule{}
